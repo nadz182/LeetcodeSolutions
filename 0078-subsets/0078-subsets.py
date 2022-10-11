@@ -10,3 +10,5 @@ class Solution:
                 set1.append(curNumber)
                 subsets.append(set1)
         return subsets
+#time complexity: O(N * 2^N)
+#space complexity: O(N * 2^N)
