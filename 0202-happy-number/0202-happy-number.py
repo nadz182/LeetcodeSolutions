@@ -1,8 +1,7 @@
 class Solution:
     def isHappy(self, n: int) -> bool:
-        
         def findSquare(n):
-            _sum = 0
+            _sum=0
             while n>0:
                 digit = n%10
                 _sum += digit*digit
@@ -15,4 +14,4 @@ class Solution:
             fast = findSquare(findSquare(fast))
             if slow == fast:
                 break
-        return slow==1
+        return fast == 1
